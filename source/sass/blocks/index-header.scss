@@ -1,0 +1,122 @@
+.index-header {
+  background-image: url("../img/index-header/bg-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-header/bg-mobile@2x.jpg");
+  }
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  @media ($tablet) {
+    background-image: url("../img/index-header/bg-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-header/bg-tablet@2x.jpg");
+    }
+  }
+
+  @media ($desktop) {
+    background-image: url("../img/index-header/bg-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-header/bg-desktop@2x.jpg");
+    }
+  }
+
+
+
+  &__container-bottom {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: grid;
+    row-gap: 90px;
+    color: $white;
+
+    @media ($tablet) {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+
+    @media ($desktop) {
+      grid-template-columns: 1fr 1fr;
+      padding-top: 140px;
+      padding-bottom: 140px;
+    }
+  }
+
+  &__wrapper-main {
+    display: grid;
+    row-gap: 40px;
+
+    @media ($tablet) {
+      max-width: 640px;
+    }
+
+    @media ($desktop) {
+      row-gap: 56px;
+    }
+  }
+
+  &__title {
+    @include reset-p-h;
+    font-size: 30px;
+    font-weight: 500;
+
+    @media ($tablet) {
+      font-size: 44px;
+    }
+
+    @media ($desktop) {
+      font-size: 60px;
+    }
+  }
+
+  &__text {
+    @include reset-p-h;
+    font-size: 12px;
+
+    @media ($tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__button-link {
+    max-width: 300px;
+  }
+
+  &__contacts {
+    border: 1px solid #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: grid;
+    row-gap: 20px;
+
+    @media ($tablet) {
+      max-width: 640px;
+    }
+
+    @media ($desktop) {
+      width: 366px;
+      align-self: end;
+      justify-self: end;
+    }
+  }
+
+  &__address {
+    @include reset-p-h;
+    text-transform: uppercase;
+  }
+
+  &__tels {
+    font-weight: 700;
+  }
+
+  &__tel {
+    @include reset-link;
+  }
+
+}

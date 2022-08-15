@@ -1,0 +1,28 @@
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+
+$pink-55: rgba(239, 153, 225, 0.2);
+$pink-60: #ef99e1;
+$pink-100: #d33cba;
+
+$grey-70: rgb(237, 235, 238);
+$grey-80: rgba(202, 196, 205, 0.5);
+$grey-90: rgba(202, 196, 205, 0.9);
+
+// Viewports
+
+// $mobile: "min-width-mobile:320px" ;
+
+$min-width-mobile: 320px;
+$max-width-tablet: 1279px;
+$tablet: "min-width:640px";
+$desktop: "min-width:1280px";
+
+//  Fonts
+// $main-font: "FredokaOne-Regular";
+// $main: "FredokaOne-Regular";
+
+//  Sizes
+$base-size: 16;
+$px: 1rem/$base-size;

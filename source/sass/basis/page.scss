@@ -1,0 +1,30 @@
+.page {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $black;
+  min-width: $min-width-mobile;
+
+
+  
+
+  // @media ($tablet) {
+  //   font-size: 16px;
+  // }
+
+  // // @media (min-width:$min-width-desktop) {
+  // @media ($desktop) {
+  //   font-size: 16px;
+  // }
+}
+
+.page__body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  background-color: #edebee;
+}

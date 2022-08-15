@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Сайт мастера ногтевого сервиса Олеси NailON</title>
+  <meta name="description" content="Этот сайт-визитка мастера ногтевого сервиса Олеси NailON c указанием всех видов предоставляемых услуг, их стоимости,
+    а также примеров уже произведенных работ">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" /> -->
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-180x180.png" /> -->
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <!-- Хедер -->
+  <header class="index-header">
+    <div class="header-top">
+      <div class="header-top__container container">
+        <a class="header-top__logo" href="#">
+          <picture>
+            <source media="(min-width:640px)" type="image/webp"
+              srcset="img/header-top/logo.webp 1x, img/header-top/logo@2x.webp 2x">
+            <source media="(min-width:640px)" srcset="img/header-top/logo.png 1x, img/header-top/logo@2x.png 2x">
+            <source type="image/webp"
+              srcset="img/header-top/logo-mobile.webp 1x, img/header-top/logo-mobile@2x.webp 2x">
+            <img class="header-top__logo-img" src="img/header-top/logo-mobile.png"
+              srcset="img/logo/header-top-mobile@2x.png 2x" alt="Логотип мастера ногтевого сервиса Олеси Nailon"
+              width="99" heigth="26">
+          </picture>
+        </a>
+
+        <nav class="header-top__nav header-top__nav--closed">
+          <button class="header-top__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="header-top__nav-list">
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">Услуги</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">Портфолио</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">О нас</a></li>
+            <li class="header-top__nav-item"><a class="header-top__nav-link" href="#">Акции</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-top__regime">
+          ПН. - ВС. 10:00 - 22:00
+        </div>
+        <a href="#" class="header-top__button-link button-link">Записаться</a>
+      </div>
+    </div>
+    <div class="index-header__bottom">
+      <div class="index-header__container-bottom container">
+        <div class="index-header__wrapper-main">
+          <h1 class="index-header__title">Мастер ногтевого сервиса <br> Олеся NailON</h1>
+          <p class="index-header__text">Дизайн, обработка, покрытие, моделирование, коррекция.</p>
+          <a href="#" class="index-header__button-link button-link">Записаться на визит</a>
+        </div>
+
+        <div class="index-header__contacts">
+          <p class="index-header__address">Оренбург, проспект Победы, 36, ТЦ "Победа", второй этаж, студия "Golden
+            Berry"
+          </p>
+          <span class="index-header__tels">675445 / <a class="index-header__tel" href="tel:+79619475445">+7(961)
+              947-54-45</a></span>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <h1 class="visually-hidden">Сайт frontend-разработчика Salt</h1>
+
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+
+  </footer>
+  <!-- <script src="js/navigation.js"></script> -->
+  <script>
+    var navMain = document.querySelector('.header-top__nav');
+    var navToggle = document.querySelector('.header-top__toggle');
+
+    // navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('header-top__nav--closed')) {
+        navMain.classList.remove('header-top__nav--closed');
+        navMain.classList.add('header-top__nav--opened');
+      } else {
+        navMain.classList.add('header-top__nav--closed');
+        navMain.classList.remove('header-top__nav--opened');
+      }
+    });
+  </script>
+</body>
+
+</html>

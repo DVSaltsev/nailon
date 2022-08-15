@@ -1,0 +1,10 @@
+.button-link {
+  @include reset-btn-link;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 12px 46px;
+  background-color: #d33cba;
+  border-radius: 36px;
+  color: $white;
+  font-weight: 600;
+}
