@@ -1,0 +1,35 @@
+.offer-pedicure {
+  display: grid;
+  row-gap: 20px;
+
+  &__h3 {
+    @include reset-p-h;
+  }
+
+  &__h3-link {
+    @include reset-link;
+  }
+
+  &__list {
+    @include reset-list;
+  }
+
+  &__item {}
+
+  &__img-link {
+    @include reset-link;
+  }
+
+  &__img {
+    @include reset-img;
+    display: none;
+  }
+
+  &__img-1 {
+    display: block;
+  }
+
+  &__img-2 {}
+
+  &__img-3 {}
+}

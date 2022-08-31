@@ -7,9 +7,6 @@
   color: $black;
   min-width: $min-width-mobile;
 
-
-  
-
   // @media ($tablet) {
   //   font-size: 16px;
   // }
@@ -26,5 +23,5 @@
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
   min-height: 100vh;
-  background-color: #edebee;
+  background-color: $grey-70;
 }

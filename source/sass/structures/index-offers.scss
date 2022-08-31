@@ -1,0 +1,19 @@
+.offers {
+
+  &__container {
+    padding-top: 70px;
+    padding-bottom: 35px;
+    display: grid;
+    row-gap: 30px;
+  }
+
+  &__h2 {
+    @include reset-p-h;
+    font-size: 29px;
+  }
+
+  &__button-link {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
